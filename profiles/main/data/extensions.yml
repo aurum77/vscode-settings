@@ -1,6 +1,4 @@
-disabled:
-  - id: vscodevim.vim
-    uuid: d96e79c6-8b25-4be3-8545-0e0ecefcae03
+disabled: []
 enabled:
   - id: aaron-bond.better-comments
     uuid: 7a0110bb-231a-4598-aa1b-0769ea46d28b
@@ -18,8 +16,6 @@ enabled:
     uuid: c5f4d87f-a524-462c-ac01-923eb19cf3e9
   - id: jdinhlife.gruvbox
     uuid: c6d564c4-ca8c-45ba-abf6-c85f2d1468d8
-  - id: jeanp413.open-remote-wsl
-    uuid: 85cc8d73-323e-4b6c-8b8b-cdf0f6800249
   - id: Llam4u.nerdtree
     uuid: 2a247e46-f01a-468a-84bc-93c6184d2b76
   - id: ms-azuretools.vscode-containers
@@ -54,6 +50,8 @@ enabled:
     uuid: d637104e-1fd7-4063-98fc-8afe46012c9b
   - id: usernamehw.errorlens
     uuid: 9d8c32ab-354c-4daf-a9bf-20b633734435
+  - id: vscodevim.vim
+    uuid: d96e79c6-8b25-4be3-8545-0e0ecefcae03
   - id: YuTengjing.vscode-colorize-plus
     uuid: beb993a6-6574-4cb8-9fa7-365fc6bb7fd7
   - id: zokugun.cron-tasks
