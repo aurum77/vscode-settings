@@ -3,7 +3,6 @@
     "sound": "off",
     "announcement": "off"
   },
-  "chat.commandCenter.enabled": false,
   "css.lint.unknownAtRules": "ignore",
   "debug.console.collapseIdenticalLines": false,
   "debug.console.fontFamily": "Cascadia Mono",
@@ -399,33 +398,6 @@
   "zenMode.showTabs": "none",
   "zenMode.silentNotifications": true,
   "zenMode.hideLineNumbers": false,
-  "pgsql.connections": [
-    {
-      "id": "286A7E3B-AF22-44EC-B0DE-74B5175CE320",
-      "groupId": "D964899B-2AD9-4389-A60C-D5B220C565BA",
-      "authenticationType": "SqlLogin",
-      "connectTimeout": 15,
-      "applicationName": "vscode-pgsql",
-      "clientEncoding": "utf8",
-      "sslmode": "prefer",
-      "server": "localhost",
-      "user": "postgres",
-      "password": "",
-      "savePassword": true,
-      "database": "postgres",
-      "profileName": "cirometre",
-      "expiresOn": 0
-    }
-  ],
-  "pgsql.copilot.enable": false,
-  "pgsql.serverGroups": [
-    {
-      "name": "Servers",
-      "id": "D964899B-2AD9-4389-A60C-D5B220C565BA",
-      "isDefault": true
-    }
-  ],
-  "docker.extension.dockerEngineAvailabilityPrompt": false,
   "explorer.fileNesting.patterns": {
     "*.ts": "${capture}.js",
     "*.js": "${capture}.js.map, ${capture}.min.js, ${capture}.d.ts",
