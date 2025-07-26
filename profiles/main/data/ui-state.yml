@@ -28,8 +28,30 @@ workbench.activity.placeholderViewlets: "[{\"id\":\"workbench.view.explorer\",\
   && debugType == 'firefox'\"},{\"when\":\"inDebugMode && debugType ==
   'firefox'\"}]},{\"id\":\"workbench.view.extensions\",\"themeIcon\":{\"id\":\"\
   extensions-view-icon\"},\"name\":\"Extensions\",\"isBuiltin\":true,\"views\":\
-  []},{\"id\":\"workbench.view.remote\",\"themeIcon\":{\"id\":\"remote-explorer\
-  -view-icon\"},\"name\":\"Remote
+  [{\"when\":\"defaultExtensionViews\"},{\"when\":\"searchExtensionUpdates ||
+  searchOutdatedExtensions\"},{\"when\":\"recommendedExtensions &&
+  workbenchState != 'empty'\"},{\"when\":\"defaultExtensionViews && hasGallery
+  && !hasInstalledExtensions\"},{\"when\":\"searchExtensionUpdates ||
+  searchRecentlyUpdatedExtensions\"},{\"when\":\"recommendedExtensions\"},{\"wh\
+  en\":\"defaultExtensionViews && hasGallery &&
+  !config.extensions.showRecommendationsOnlyOnDemand &&
+  !sortByUpdateDate\"},{\"when\":\"defaultExtensionViews &&
+  hasInstalledExtensions\"},{\"when\":\"defaultExtensionViews &&
+  hasInstalledMcpServers\"},{\"when\":\"defaultExtensionViews &&
+  !chatSetupHidden &&
+  !hasInstalledMcpServers\"},{\"when\":\"defaultExtensionViews &&
+  hasInstalledExtensions\"},{\"when\":\"searchMarketplaceExtensions\"},{\"when\
+  \":\"installedExtensions ||
+  searchInstalledExtensions\"},{\"when\":\"searchEnabledExtensions\"},{\"when\":\
+  \"searchDisabledExtensions\"},{\"when\":\"searchBuiltInExtensions\"},{\"when\
+  \":\"searchWorkspaceUnsupportedExtensions\"},{\"when\":\"builtInExtensions\"}\
+  ,{\"when\":\"builtInExtensions\"},{\"when\":\"builtInExtensions\"},{\"when\":\
+  \"searchUnsupportedWorkspaceExtensions\"},{\"when\":\"searchUnsupportedWorksp\
+  aceExtensions\"},{\"when\":\"searchUnsupportedWorkspaceExtensions &&
+  virtualWorkspace\"},{\"when\":\"searchUnsupportedWorkspaceExtensions &&
+  virtualWorkspace\"},{\"when\":\"searchDeprecatedExtensions\"},{\"when\":\"sea\
+  rchMcpServers\"}]},{\"id\":\"workbench.view.remote\",\"themeIcon\":{\"id\":\"\
+  remote-explorer-view-icon\"},\"name\":\"Remote
   Explorer\",\"isBuiltin\":true,\"views\":[]},{\"id\":\"workbench.view.extensio\
   n.test\",\"themeIcon\":{\"id\":\"test-view-icon\"},\"name\":\"Testing\",\"isB\
   uiltin\":true,\"views\":[{\"when\":\"testing.providerCount >
@@ -63,7 +85,7 @@ workbench.auxiliarybar.placeholderPanels: '[{"id":"workbench.panel.chat","themeI
   || !chatSetupDisabled &&
   !chatSetupHidden"}]},{"id":"workbench.panel.chatEditing","isBuiltin":false}]'
 workbench.auxiliaryBar.size: "300"
-workbench.editor.languageDetectionOpenedLanguages.global: '[["typescript",true],["yaml",true],["json",true],["plaintext",true],["go",true],["jsonc",true],["markdown",true],["shellscript",true],["html",true],["properties",true],["javascript",true],["typescriptreact",true]]'
+workbench.editor.languageDetectionOpenedLanguages.global: '[["typescript",true],["yaml",true],["json",true],["go",true],["markdown",true],["shellscript",true],["html",true],["javascript",true],["typescriptreact",true],["plaintext",true],["jsonc",true],["properties",true]]'
 workbench.explorer.views.state.hidden: '[{"id":"outline","isHidden":true},{"id":"timeline","isHidden":true},{"id":"workbench.explorer.openEditorsView","isHidden":true},{"id":"workbench.explorer.emptyView","isHidden":false},{"id":"workbench.explorer.fileView","isHidden":false,"order":1},{"id":"npm","isHidden":true},{"id":"javaProjectExplorer","isHidden":false},{"id":"mavenProjects","isHidden":false},{"id":"dartDependencyTree","isHidden":false,"order":5},{"id":"liveshare.session.explorer","isHidden":false},{"id":"objectExplorer","isHidden":false},{"id":"queryHistory","isHidden":false},{"id":"slnexpl","isHidden":false,"order":2},{"id":"dockerContainers","isHidden":false},{"id":"dockerImages","isHidden":false},{"id":"dockerRegistries","isHidden":false},{"id":"dockerNetworks","isHidden":false},{"id":"dockerVolumes","isHidden":false},{"id":"vscode-docker.views.dockerContexts","isHidden":false},{"id":"vscode-docker.views.help","isHidden":false},{"id":"petsView","isHidden":false},{"id":"solutionExplorer","isHidden":false,"order":2},{"id":"go.explorer","isHidden":false,"order":8},{"id":"arduinoExampleExplorer","isHidden":false},{"id":"vscode-serial-monitor.monitor0","isHidden":false},{"id":"vscode-serial-monitor.monitor1","isHidden":false},{"id":"vscode-serial-monitor.monitor2","isHidden":false},{"id":"sqltoolsViewConsoleMessages","isHidden":false},{"id":"sqltoolsViewConnectionExplorer","isHidden":false},{"id":"sqltoolsViewBookmarksExplorer","isHidden":false},{"id":"sqltoolsViewHistoryExplorer","isHidden":false},{"id":"dartFlutterSidebar","isHidden":false},{"id":"dartFlutterOutline","isHidden":false},{"id":"slnbrw","isHidden":false},{"id":"scenePreview","isHidden":false},{"id":"podmanView","isHidden":false},{"id":"dashyeah-dashboard-sidebar","isHidden":false},{"id":"gitlens.views.home","isHidden":false},{"id":"gitlens.views.launchpad","isHidden":false},{"id":"gitlens.views.drafts","isHidden":false},{"id":"gitlens.views.workspaces","isHidden":false},{"id":"nuget.gallery.view","isHidden":false},{"id":"dbcode.connections.view","isHidden":false},{"id":"dbcode.tunnels.view","isHidden":false},{"id":"dbcode.history.view","isHidden":false},{"id":"dbcode.account.view","isHidden":false},{"id":"dbcode.help.view","isHidden":false},{"id":"dbcode.panelView","isHidden":false},{"id":"vscode-edge-devtools-view.targets","isHidden":false},{"id":"vscode-edge-devtools-view.help-links","isHidden":false},{"id":"github.cweijan.mysql","isHidden":false},{"id":"github.dbclient.history","isHidden":false},{"id":"github.cweijan.nosql","isHidden":false},{"id":"ri-sidebar","isHidden":false},{"id":"codachiView","isHidden":false},{"id":"continue.continueGUIView","isHidden":false}]'
 workbench.panel.alignment: center
 workbench.panel.chat.hidden: '[{"id":"workbench.panel.chat.view.copilot","isHidden":false}]'
@@ -82,7 +104,7 @@ workbench.panel.placeholderPanels: '[{"id":"workbench.panel.markers","themeIcon"
   Preview","isBuiltin":true,"views":[{"when":"refactorPreview.enabled"}]}]'
 workbench.panel.repl.hidden: '[{"id":"workbench.panel.repl.view","isHidden":false}]'
 workbench.panel.size: "344"
-workbench.quickInput.viewState: '{"top":0.24982307147912244,"left":0.5}'
+workbench.quickInput.viewState: '{"top":0.25,"left":0.5}'
 workbench.scm.views.state.hidden: '[{"id":"workbench.scm.repositories","isHidden":true},{"id":"workbench.scm","isHidden":false},{"id":"gitlens.views.commits","isHidden":false},{"id":"gitlens.views.repositories","isHidden":true},{"id":"gitlens.views.fileHistory","isHidden":false},{"id":"gitlens.views.lineHistory","isHidden":true},{"id":"gitlens.views.branches","isHidden":false},{"id":"gitlens.views.remotes","isHidden":false},{"id":"gitlens.views.stashes","isHidden":false},{"id":"gitlens.views.tags","isHidden":false},{"id":"gitlens.views.contributors","isHidden":false},{"id":"gitlens.views.searchAndCompare","isHidden":false},{"id":"gitlens.views.worktrees","isHidden":false},{"id":"gitlens.views.commitDetails","isHidden":false},{"id":"workbench.scm.sync","isHidden":false},{"id":"workbench.scm.history","isHidden":false},{"id":"gitlens.views.scm.grouped","isHidden":false}]'
 workbench.sideBar.size: "300"
 workbench.statusbar.hidden: '["YuTengjing.vscode-colorize-plus","esbenp.prettier-vscode.prettier.status","status.windowZoom","chat.statusBarEntry"]'
