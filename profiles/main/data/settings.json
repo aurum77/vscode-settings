@@ -5,21 +5,22 @@
   },
   "css.lint.unknownAtRules": "ignore",
   "debug.console.collapseIdenticalLines": false,
-  "debug.console.fontFamily": "Cascadia Mono",
+  "debug.console.fontFamily": "Noto Sans Mono",
   "debug.onTaskErrors": "abort",
   "diffEditor.ignoreTrimWhitespace": false,
   "editor.acceptSuggestionOnCommitCharacter": false,
   "editor.acceptSuggestionOnEnter": "off",
   "editor.accessibilitySupport": "off",
   "editor.bracketPairColorization.enabled": false,
-  "editor.codeLensFontFamily": "Cascadia Mono",
+  "editor.codeLensFontFamily": "Noto Sans Mono",
   "editor.cursorSurroundingLines": 0,
+  "editor.detectIndentation": true,
   "editor.folding": false,
-  "editor.fontFamily": "Cascadia Mono",
+  "editor.fontFamily": "Noto Sans Mono",
   "editor.fontLigatures": false,
   "editor.hover.above": false,
   "editor.hover.enabled": true,
-  "editor.inlayHints.fontFamily": "Cascadia Mono",
+  "editor.inlayHints.fontFamily": "Noto Sans Mono",
   "editor.inlineSuggest.enabled": true,
   "editor.lightbulb.enabled": "off",
   "editor.lineNumbers": "relative",
@@ -45,7 +46,7 @@
     "javascript": "javascriptreact"
   },
   "emmet.showExpandedAbbreviation": "never",
-  "errorLens.fontFamily": "Cascadia Mono",
+  "errorLens.fontFamily": "Noto Sans Mono",
   "errorLens.gutterIconSet": "circle",
   "errorLens.gutterIconsEnabled": true,
   "errorLens.statusBarColorsEnabled": true,
@@ -74,8 +75,8 @@
   "git.suggestSmartCommit": false,
   "git.blame.editorDecoration.enabled": true,
   "javascript.updateImportsOnFileMove.enabled": "always",
-  "markdown.preview.fontFamily": "Cascadia Mono",
-  "scm.inputFontFamily": "Cascadia Mono",
+  "markdown.preview.fontFamily": "Noto Sans Mono",
+  "scm.inputFontFamily": "Noto Sans Mono",
   "search.showLineNumbers": true,
   "search.useIgnoreFiles": true,
   "security.workspace.trust.enabled": false,
@@ -89,9 +90,9 @@
     "docker-desktop"
   ],
   "terminal.integrated.cursorBlinking": true,
-  "terminal.integrated.cursorStyle": "line",
-  "terminal.integrated.cursorStyleInactive": "none",
-  "terminal.integrated.fontFamily": "Cascadia Mono",
+  "terminal.integrated.cursorStyle": "block",
+  "terminal.integrated.cursorStyleInactive": "outline",
+  "terminal.integrated.fontFamily": "Noto Sans Mono",
   "typescript.updateImportsOnFileMove.enabled": "always",
   "vim.handleKeys": {
     "<C-n>": false
@@ -352,6 +353,7 @@
   "window.customMenuBarAltFocus": false,
   "window.customTitleBarVisibility": "auto",
   "window.density.editorTabHeight": "compact",
+  "window.dialogStyle": "native",
   "window.title": "${dirty}${activeEditorShort}${separator}${rootName}${separator}${profileName}",
   "window.titleBarStyle": "custom",
   "workbench.activityBar.iconClickBehavior": "toggle",
@@ -368,32 +370,36 @@
   "workbench.startupEditor": "none",
   // Language specific stuff
   "[html]": {
-    "editor.defaultFormatter": "vscode.html-language-features"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 4
   },
   "[css]": {
-    "editor.defaultFormatter": "vscode.css-language-features"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 4
   },
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.tabSize": 4
   },
   "[typescriptreact]": {
-    "editor.defaultFormatter": "vscode.typescript-language-features",
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.tabSize": 4
   },
   "[javascript]": {
-    "editor.defaultFormatter": "vscode.typescript-language-features",
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.tabSize": 4
   },
   "[javascriptreact]": {
-    "editor.defaultFormatter": "vscode.typescript-language-features",
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.tabSize": 4
   },
   "[json]": {
-    "editor.defaultFormatter": "vscode.json-language-features"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 4
   },
   "[jsonc]": {
-    "editor.defaultFormatter": "vscode.json-language-features"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 4
   },
   "zenMode.showTabs": "none",
   "zenMode.silentNotifications": true,
