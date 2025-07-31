@@ -371,35 +371,27 @@
   // Language specific stuff
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.tabSize": 4
   },
   "[css]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.tabSize": 4
   },
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.tabSize": 4
   },
   "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.tabSize": 4
   },
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.tabSize": 4
   },
   "[javascriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.tabSize": 4
   },
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.tabSize": 4
   },
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.tabSize": 4
   },
   "zenMode.showTabs": "none",
   "zenMode.silentNotifications": true,
@@ -418,4 +410,5 @@
     "*.sdb": "${capture}.${extname}-*",
     "*.s3db": "${capture}.${extname}-*"
   },
+  "terminal.integrated.enableMultiLinePasteWarning": "never",
 }
