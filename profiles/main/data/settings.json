@@ -38,10 +38,7 @@
   "editor.tabSize": 4,
   "editor.unicodeHighlight.ambiguousCharacters": false,
   "editor.wordWrap": "on",
-  "emmet.excludeLanguages": [
-    "markdown",
-    "javascript"
-  ],
+  "emmet.excludeLanguages": ["markdown", "javascript"],
   "emmet.includeLanguages": {
     "javascript": "javascriptreact"
   },
@@ -57,6 +54,9 @@
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
   "explorer.confirmPasteNative": false,
+  "extensions.experimental.affinity": {
+    "vscodevim.vim": 1
+  },
   "extensions.ignoreRecommendations": true,
   "files.exclude": {
     "**/.classpath": true,
@@ -90,6 +90,7 @@
   "terminal.integrated.cursorStyle": "block",
   "terminal.integrated.cursorStyleInactive": "outline",
   "terminal.integrated.fontFamily": "Cascadia Mono",
+  "terminal.integrated.enableMultiLinePasteWarning": "never",
   "typescript.updateImportsOnFileMove.enabled": "always",
   "vim.handleKeys": {
     "<C-n>": false
@@ -97,169 +98,79 @@
   "vim.leader": "<space>",
   "vim.normalModeKeyBindings": [
     {
-      "before": [
-        "<C-h>"
-      ],
-      "commands": [
-        "workbench.action.focusLeftGroup"
-      ]
+      "before": ["<C-h>"],
+      "commands": ["workbench.action.focusLeftGroup"]
     },
     {
-      "before": [
-        "<C-j>"
-      ],
-      "commands": [
-        "workbench.action.focusBelowGroup"
-      ]
+      "before": ["<C-j>"],
+      "commands": ["workbench.action.focusBelowGroup"]
     },
     {
-      "before": [
-        "<C-k>"
-      ],
-      "commands": [
-        "workbench.action.focusAboveGroup"
-      ]
+      "before": ["<C-k>"],
+      "commands": ["workbench.action.focusAboveGroup"]
     },
     {
-      "before": [
-        "<C-l>"
-      ],
-      "commands": [
-        "workbench.action.focusRightGroup"
-      ]
+      "before": ["<C-l>"],
+      "commands": ["workbench.action.focusRightGroup"]
     },
     {
-      "before": [
-        "<C-p>"
-      ],
-      "commands": [
-        "workbench.action.quickOpen"
-      ]
+      "before": ["<C-p>"],
+      "commands": ["workbench.action.quickOpen"]
     },
     {
-      "before": [
-        "<C-w>",
-        "H"
-      ],
-      "commands": [
-        "workbench.action.moveActiveEditorGroupLeft"
-      ]
+      "before": ["<C-w>", "H"],
+      "commands": ["workbench.action.moveActiveEditorGroupLeft"]
     },
     {
-      "before": [
-        "<C-w>",
-        "J"
-      ],
-      "commands": [
-        "workbench.action.moveActiveEditorGroupDown"
-      ]
+      "before": ["<C-w>", "J"],
+      "commands": ["workbench.action.moveActiveEditorGroupDown"]
     },
     {
-      "before": [
-        "<C-w>",
-        "K"
-      ],
-      "commands": [
-        "workbench.action.moveActiveEditorGroupUp"
-      ]
+      "before": ["<C-w>", "K"],
+      "commands": ["workbench.action.moveActiveEditorGroupUp"]
     },
     {
-      "before": [
-        "<C-w>",
-        "L"
-      ],
-      "commands": [
-        "workbench.action.moveActiveEditorGroupRight"
-      ]
+      "before": ["<C-w>", "L"],
+      "commands": ["workbench.action.moveActiveEditorGroupRight"]
     },
     {
-      "before": [
-        "<C-d>"
-      ],
-      "after": [
-        "<C-d>",
-        "z",
-        "z"
-      ]
+      "before": ["<C-d>"],
+      "after": ["<C-d>", "z", "z"]
     },
     {
-      "before": [
-        "<C-u>"
-      ],
-      "after": [
-        "<C-u>",
-        "z",
-        "z"
-      ]
+      "before": ["<C-u>"],
+      "after": ["<C-u>", "z", "z"]
     },
     {
-      "before": [
-        "<leader>",
-        "<leader>"
-      ],
-      "commands": [
-        "workbench.action.showEditorsInActiveGroup"
-      ]
+      "before": ["<leader>", "<leader>"],
+      "commands": ["workbench.action.showEditorsInActiveGroup"]
     },
     {
-      "before": [
-        "<leader>",
-        "h",
-        "h"
-      ],
-      "commands": [
-        "git.openChange"
-      ]
+      "before": ["<leader>", "h", "h"],
+      "commands": ["git.openChange"]
     },
     {
-      "before": [
-        "<leader>",
-        "r",
-        "n"
-      ],
-      "commands": [
-        "editor.action.rename"
-      ]
+      "before": ["<leader>", "r", "n"],
+      "commands": ["editor.action.rename"]
     },
     {
-      "before": [
-        "<C-w>",
-        "q"
-      ],
-      "commands": [
-        "workbench.action.closeEditorsAndGroup"
-      ]
+      "before": ["<C-w>", "q"],
+      "commands": ["workbench.action.closeEditorsAndGroup"]
     },
     {
-      "before": [
-        "<C-f>"
-      ],
-      "commands": [
-        "editor.action.formatDocument"
-      ]
+      "before": ["<C-f>"],
+      "commands": ["editor.action.formatDocument"]
     },
     {
-      "before": [
-        "g",
-        "r"
-      ],
-      "commands": [
-        "editor.action.goToReferences"
-      ]
+      "before": ["g", "r"],
+      "commands": ["editor.action.goToReferences"]
     },
     {
-      "before": [
-        "g",
-        "I"
-      ],
-      "commands": [
-        "editor.action.goToImplementation"
-      ]
+      "before": ["g", "I"],
+      "commands": ["editor.action.goToImplementation"]
     },
     {
-      "before": [
-        "u"
-      ],
+      "before": ["u"],
       "commands": [
         {
           "command": "undo",
@@ -268,9 +179,7 @@
       ]
     },
     {
-      "before": [
-        "<C-r>"
-      ],
+      "before": ["<C-r>"],
       "after": [],
       "commands": [
         {
@@ -282,54 +191,32 @@
   ],
   "vim.normalModeKeyBindingsNonRecursive": [
     {
-      "before": [
-        "<leader>",
-        "e"
-      ],
-      "commands": [
-        "workbench.action.toggleSidebarVisibility"
-      ]
+      "before": ["<leader>", "e"],
+      "commands": ["workbench.action.toggleSidebarVisibility"]
     },
     {
-      "before": [
-        "<leader>",
-        "t",
-        "d"
-      ],
-      "commands": [
-        "git.openChange"
-      ]
+      "before": ["<leader>", "t", "d"],
+      "commands": ["git.openChange"]
     },
     {
-      "before": [
-        "K"
-      ],
+      "before": ["K"],
       "commands": [
         {
           "command": "editor.action.showHover"
         }
       ]
-    },
+    }
   ],
   "vim.insertModeKeyBindings": [
     {
-      "before": [
-        "f",
-        "d"
-      ],
-      "after": [
-        "<esc>"
-      ]
+      "before": ["f", "d"],
+      "after": ["<esc>"]
     }
   ],
   "vim.visualModeKeyBindings": [
     {
-      "before": [
-        "<C-i>"
-      ],
-      "commands": [
-        "continue.focusEdit"
-      ]
+      "before": ["<C-i>"],
+      "commands": ["continue.focusEdit"]
     }
   ],
   "vim.highlightedyank.color": "#fe8019",
@@ -367,28 +254,28 @@
   "workbench.startupEditor": "none",
   // Language specific stuff
   "[html]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[css]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[typescriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[javascriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "zenMode.showTabs": "none",
   "zenMode.silentNotifications": true,
@@ -406,6 +293,5 @@
     "*.db3": "${capture}.${extname}-*",
     "*.sdb": "${capture}.${extname}-*",
     "*.s3db": "${capture}.${extname}-*"
-  },
-  "terminal.integrated.enableMultiLinePasteWarning": "never",
+  }
 }
