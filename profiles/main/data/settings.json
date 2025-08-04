@@ -57,9 +57,6 @@
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
   "explorer.confirmPasteNative": false,
-  "extensions.experimental.affinity": {
-    "vscodevim.vim": 1
-  },
   "extensions.ignoreRecommendations": true,
   "files.exclude": {
     "**/.classpath": true,
