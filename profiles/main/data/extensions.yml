@@ -18,8 +18,6 @@ enabled:
     uuid: c5f4d87f-a524-462c-ac01-923eb19cf3e9
   - id: jdinhlife.gruvbox
     uuid: c6d564c4-ca8c-45ba-abf6-c85f2d1468d8
-  - id: jeanp413.open-remote-wsl
-    uuid: 85cc8d73-323e-4b6c-8b8b-cdf0f6800249
   - id: Llam4u.nerdtree
     uuid: 2a247e46-f01a-468a-84bc-93c6184d2b76
   - id: ms-azuretools.vscode-containers
