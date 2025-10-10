@@ -1,6 +1,6 @@
 disabled:
   - id: vscodevim.vim
-    uuid: d96e79c6-8b25-4be3-8545-0e0ecefcae03
+    uuid: 00000000-0000-0000-0000-000000000000
 enabled:
   - id: aaron-bond.better-comments
     uuid: 7a0110bb-231a-4598-aa1b-0769ea46d28b
